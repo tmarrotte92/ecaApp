@@ -22,9 +22,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use(express.static(__dirname + '/public'));
-app.use('/static', express.static(__dirname + '/public'));
-
+app.use('/img',express.static(path.join(__dirname, 'public/assets/img')));
+app.use('/js',express.static(path.join(__dirname, 'public/assets/js')));
+app.use('/css',express.static(path.join(__dirname, 'public/assets/css')));
 
 app.use('/', routes);
 app.use('/users', users);
