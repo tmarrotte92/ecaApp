@@ -10,6 +10,7 @@ var users = require('./routes/users');
 
 var app = express();
 
+
 // view engine setup
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
@@ -21,6 +22,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public/assets/')));
+app.use(express.static(path.join(__dirname, 'public/assets/css')));
+app.use(express.static(path.join(__dirname, 'public/assets/js')));
+app.use(express.static(path.join(__dirname, 'public/assets/img')));
 
 app.use('/', routes);
 app.use('/users', users);
