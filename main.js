@@ -23,7 +23,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 
-app.use(express.static('public'));
+app.use(express.static('public/assets'));
+
 app.use('/', routes);
 app.use('/users', users);
 
