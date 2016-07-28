@@ -1,378 +1,378 @@
 extends layout
 
 
-  body#page-top.index
-    // Preloader
-    #loader
-      .icon
-    // END: Preloader
-    // Header
-    header.header-img
-      .header-overlay
-      .container
-        .row
-          .col-md-12.text-left
-            h1 East Coast Authentics
-            h2.cd-headline.clip.is-full-width
-              span.cd-words-wrapper
-                b.is-visible Accepting Members - Apply today!
-                b ECA Take Over Car Show | August 20
-                b Sunday Meets - 90 Elm Street, Enfield CT | 5PM - 9PM
-            a.page-scroll.btn.custom-btn-3(href='#about') LEARN MORE
-    // END: Header
-    // Navigation
-    #navigation
-      nav#nav.navbar.navbar-default.navbar-static-top
-        .container
-          .navbar-header.page-scroll
-            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-              span.sr-only Explore
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            // Brand
-            a.navbar-brand.page-scroll(align='center', href='#page-top')
-            // End Brand
-          .collapse.navbar-collapse
-            ul.nav.navbar-nav.navbar-right
-              li
-                a.page-scroll(href='#about') About
-              li
-                a.page-scroll(href='#skills') Events
-              li
-                a.page-scroll(href='#portfolio') Pictures
-              li
-                a.page-scroll(href='#experience') Videos
-              li
-                a.page-scroll(href='#reviews') Membership
-              li
-                a.page-scroll(href='#blog') Blog
-              li
-                a.page-scroll(href='#contact') Contact
-    // END: Navigation
-    // Introduction
-    section#introduction
-      .container
-        .row
-          .col-md-6.profile
-            a(href='https://www.facebook.com/events/1743964672541925/')
-              img.img-responsive.center-block(src='assets/img/F.jpg', alt='')
-          .col-md-6
-            .download-cv.wow.fadeInUp(height='200px', widht='align=', data-wow-duration='1s', data-wow-delay='.8s')
-              .wow.fadeIn(data-wow-duration='1s', data-wow-delay='.4s')
-                h1.sub-headline
-                  | FEATURED
-                  span.dot .
-                  h3 East Coast Authentics Take Over Car Show
-                  b
-                    | To benefit the East Windsor PD Union
-                    br
-                    | 									Follow the link below for more information!
-                  p
-              br
-              a(href='https://www.facebook.com/events/1743964672541925/') ECA Take Over!
-    // END: Introduction
-    // Skills
-    section#skills
-      .container
-        .row
-          .col-md-4.wow.fadeIn(data-wow-duration='1s', data-wow-delay='.4s')
-            h2.sub-headline
-              | Enfield Mall Meets
-              span.dot .
-            h3
-              | SUNDAYS 5 PM - 9 PM 
-              br
-              hr
-              | 						Every Sunday - Come on out!
-              hr
-              b Enfield Mall
-              br
-              | 						90 Elm Street, Enfield CT
-              br
-          .col-md-8
-            img.img-responsive.center-block(src='assets/img/F2.jpg', alt='')
-    // END: Skills
-    // Work Strategy
-    section#strategy
-      .container
-        .row
-          .col-md-12
-            h2.sub-headline
-              | Discuss
-              span.dot .
-        .row.sub-icon
-          .col-md-4
-            .wow.fadeInDown(data-wow-duration='1s', data-wow-delay='.2s')
-              h3
-                span.ti-light-bulb
-                | Ideas
-              p
-                | Lorem ipsum dolor sit amet, mundi invidunt persequeris eu sed ridens facilisis eum.
-            .wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.5s')
-              h3
-                span.ti-pencil
-                | Designs
-              p
-                | Lorem ipsum dolor sit amet, mundi invidunt persequeris eu sed ridens facilisis eum.
-          .col-md-4
-            img.img-responsive.center-block(src='assets/img/2.png', alt='')
-          .col-md-4
-            .wow.fadeInDown(data-wow-duration='1s', data-wow-delay='.2s')
-              h3
-                span.ti-control-shuffle
-                | Advice
-              p
-                | Lorem ipsum dolor sit amet, mundi invidunt persequeris eu sed ridens facilisis eum.
-            .wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.5s')
-              h3
-                span.ti-upload
-                | Follow Experts
-              p
-                | Lorem ipsum dolor sit amet, mundi invidunt persequeris eu sed ridens facilisis eum.
-    // END: Work strategy
-    // Quotes
-    section#quotes
-      .container
-        .quotes-overlay
-        .row
-          .col-md-8.col-md-push-2.text-center
-            h2 Driven to be the best.
-    // END: Quotes
-    // Portfolio
-    section#portfolio.portfolio-wrap
-      .container
-        .row
-          .col-md-12
-            h2.sub-headline
-              | Merchandise
-              span.dot .
-        .row
-          .col-xs-12.item-filter.bot-margin
-            ul.list-inline.text-center
-              li.filter(data-filter='all') Stickers
-              li.filter(data-filter='.print') Posters
-              li.filter(data-filter='.brand') Clothing
-              li.filter(data-filter='.logo') Automotive
-          #portfolio-items.col-xs-12
-            .row
-              .col-md-3.col-xs-12.mix.brand(data-myorder='1')
-                a(href='#', data-toggle='modal', data-target='#portfolio1')
-                  .img-wrap
-                    img.img-responsive.center-block(src='assets/img/portfolio/portfolio01.jpg', alt='')
-                    .img-overlay
-              .col-md-3.col-xs-12.mix.logo(data-myorder='2')
-                a(href='#', data-toggle='modal', data-target='#portfolio1')
-                  .img-wrap
-                    img.img-responsive.center-block(src='assets/img/portfolio/portfolio02.jpg', alt='')
-                    .img-overlay
-              .col-md-3.col-xs-12.mix.print(data-myorder='3')
-                a(href='#', data-toggle='modal', data-target='#portfolio1')
-                  .img-wrap
-                    img.img-responsive.center-block(src='assets/img/portfolio/portfolio03.jpg', alt='')
-                    .img-overlay
-              .col-md-3.col-xs-12.mix.logo(data-myorder='4')
-                a(href='#', data-toggle='modal', data-target='#portfolio1')
-                  .img-wrap
-                    img.img-responsive.center-block(src='assets/img/portfolio/portfolio04.jpg', alt='')
-                    .img-overlay
-              .col-md-3.col-xs-12.mix.brand(data-myorder='4')
-                a(href='#', data-toggle='modal', data-target='#portfolio1')
-                  .img-wrap
-                    img.img-responsive.center-block(src='assets/img/portfolio/portfolio05.jpg', alt='')
-                    .img-overlay
-              .col-md-3.col-xs-12.mix.brand(data-myorder='4')
-                a(href='#', data-toggle='modal', data-target='#portfolio1')
-                  .img-wrap
-                    img.img-responsive.center-block(src='assets/img/portfolio/portfolio06.jpg', alt='')
-                    .img-overlay
-              .col-md-3.col-xs-12.mix.print(data-myorder='4')
-                a(href='#', data-toggle='modal', data-target='#portfolio1')
-                  .img-wrap
-                    img.img-responsive.center-block(src='assets/img/portfolio/portfolio07.jpg', alt='')
-                    .img-overlay
-              .col-md-3.col-xs-12.mix.print(data-myorder='4')
-                a(href='#', data-toggle='modal', data-target='#portfolio1')
-                  .img-wrap
-                    img.img-responsive.center-block(src='assets/img/portfolio/portfolio08.jpg', alt='')
-                    .img-overlay
-      // Portfolio1 fullscreen modal
-      #portfolio1.modal.fade.modal-fullscreen.force-fullscreen(tabindex='-1', role='dialog', aria-hidden='true')
-        .modal-dialog
-          .modal-content
-            .modal-header
-              button.close(type='button', data-dismiss='modal', aria-label='Close')
-                span(aria-hidden='true') ×
-              .modal-title
-                .container
-                  .row
-                    .col-md-12
-                      h2 Upcoming Items
-            .modal-body
-              .container
-                .row.top-margin
-                  .col-md-4
-                    img.img-responsive.center-block(src='assets/img/portfolio/portfolio01.jpg', alt='')
-                  .col-md-8
-                    h3 New Items -
-                    p Logo creation of XYZ
-                    h3 Description -
-                    p
-                      | Ipsum partem voluptatibus ex nam, prima virtute electram ius ei, vide error intellegat id cum. Duo ut accumsan molestie. Feugait referrentur vel in, te nostro convenire per, nullam nostrud placerat cum ne. Ne ancillae expetenda nec, dicam oportere te mel, audiam mnesarchum.
-                    h3 Comments -
-                    p
-                      | Ipsum partem voluptatibus ex nam, prima virtute electram ius ei, vide error intellegat id cum. Duo ut accumsan molestie. Feugait referrentur vel in, te nostro convenire per, nullam nostrud.
-            .modal-footer
-              .container
-                .row
-                  .col-md-12
-                    button.btn.custom-btn-2.pull-left(type='button', data-dismiss='modal') Close
-      // END: Portfolio1 fullscreen modal
-    // END: Portfolio
-    // Brands
-    section#brands
-      .container
-        .row
-          #brands-slider.col-md-12
-            .item
-              img.img-responsive.center-block(src='assets/img/brands/01.png', alt='')
-            .item
-              img.img-responsive.center-block(src='assets/img/brands/02.png', alt='')
-            .item
-              img.img-responsive.center-block(src='assets/img/brands/03.png', alt='')
-            .item
-              img.img-responsive.center-block(src='assets/img/brands/04.png', alt='')
-    // END: Brands
-    // Blog
-    section#blog
-      .container
-        .row
-          .col-md-12
-            h2.sub-headline
-              | Latest News
-              span.dot .
-        .row.top-pad
-          .col-md-4
-            .blog-img-overlay
-              a(href='#')
-                img.img-responsive.center-block(src='assets/img/blog/b_01.jpg', alt='')
-            .blog-info
-              h3
-                span.ti-layout-media-overlay-alt-2.blog-icon
-                | Lorem ipsum sample blog
-              .border-style
-                span.date 05 May, 2016
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae sem laoreet, mattis arcu at, lacinia praesent bibendum eros tempus.
-            .border-style
-              a.more(href='#') Read more
-          .col-md-4
-            .blog-img-overlay
-              a(href='#')
-                img.img-responsive.center-block(src='assets/img/blog/b_02.jpg', alt='')
-            .blog-info
-              h3
-                span.ti-layout-media-overlay-alt-2.blog-icon
-                | Lorem ipsum sample blog
-              .border-style
-                span.date 15 March, 2016
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae sem laoreet, mattis arcu at, lacinia praesent bibendum eros tempus.
-            .border-style
-              a.more(href='#') Read more
-          .col-md-4
-            .blog-img-overlay
-              a(href='#')
-                img.img-responsive.center-block(src='assets/img/blog/b_03.jpg', alt='')
-            .blog-info
-              h3
-                span.ti-layout-media-overlay-alt-2.blog-icon
-                | Lorem ipsum sample blog
-              .border-style
-                span.date 18 June , 2015
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae sem laoreet, mattis arcu at, lacinia praesent bibendum eros tempus.
-            .border-style
-              a.more(href='#') Read more
-    // END: Blog
-    // Contact
-    section#contact
-      .container
-        .row.sub-icon
-          .col-md-10.col-md-offset-1.col-md-push-1
-            .row
-              .col-sm-4.wow.fadeInDown(data-wow-duration='1.5s', data-wow-delay='.4s')
-                h3
-                  span.ti-location-pin
-                  | Address
-                p 218A EAST COAST, CT 6SA
-              .col-sm-4.wow.fadeInDown(data-wow-duration='1.5s', data-wow-delay='.6s')
-                h3
-                  span.ti-email
-                  | Email
-                a(href='mailto:info@themehexa.com') info@eastcoastauthentics.com
-              .col-sm-4.wow.fadeInDown(data-wow-duration='1.5s', data-wow-delay='.8s')
-                h3
-                  span.ti-mobile
-                  | Phone
-                a(href='tel:+441258889063') 1 125 888 0000
-        .row.top-pad.sub-icon
-          .col-md-8.col-md-offset-2
-            form.form-horizontal(method='post', action='email.php')
-              .form-group
-                .col-md-12
-                  // Email Confirmation Success
-                  p.confirmation.send-success
-                    span.ti-check-box
-                    | Email sent successfully.
-                  // Email Confirmation Error
-                  p.confirmation.send-error
-                    span.ti-alert
-                    | There is a problem sending email ...
-                  input.form-control(type='text', name='name', placeholder='Name', required='required')
-                  input.form-control(type='text', name='subject', placeholder='Subject', required='required')
-                  input.form-control(type='email', name='email', placeholder='Email', required='required')
-                  textarea.form-control(name='message', rows='4', placeholder='Message', required='required')
-                  button.btn.custom-btn-2.wow.fadeInUp(type='submit', data-wow-duration='1s', data-wow-delay='.5s') Submit
-    // END: Contact
-    // Footer
-    footer
-      .container
-        .row
-          .col-md-12.text-center
-            ul.list-inline.social-icon
-              li
-                a(href='#')
-                  span.ti-facebook
-              li
-                a(href='#')
-                  span.ti-google
-              li
-                a(href='#')
-                  span.ti-twitter
-              li
-                a(href='#')
-                  span.ti-dribbble
-              li
-                a(href='#')
-                  span.ti-skype
-    // END: Footer
-    // Scroll Top
-    .scroll-top
-      a.page-scroll(href='#page-top')
-        span.ti-angle-up
-    // END: Scroll Top
-    // javascript plugins
-    script(src='assets/js/jquery-1.11.1.min.js')
-    script(src='assets/js/bootstrap.min.js')
-    script(src='assets/js/jquery.easing.1.3.min.js')
-    script(src='assets/js/appear.js')
-    script(src='assets/js/bootstrap-progressbar.min.js')
-    script(src='assets/js/owl.carousel.min.js')
-    script(src='assets/js/jquery.mixitup.min.js')
-    script(src='assets/js/waypoints.min.js')
-    script(src='assets/js/jquery.counterup.min.js')
-    script(src='assets/js/animated-jquery.js')
-    script(src='assets/js/wow.min.js')
-    // custom js
-    script(src='assets/js/custom.js')
+body#page-top.index
+// Preloader
+#loader
+  .icon
+// END: Preloader
+// Header
+header.header-img
+  .header-overlay
+  .container
+	.row
+	  .col-md-12.text-left
+		h1 East Coast Authentics
+		h2.cd-headline.clip.is-full-width
+		  span.cd-words-wrapper
+			b.is-visible Accepting Members - Apply today!
+			b ECA Take Over Car Show | August 20
+			b Sunday Meets - 90 Elm Street, Enfield CT | 5PM - 9PM
+		a.page-scroll.btn.custom-btn-3(href='#about') LEARN MORE
+// END: Header
+// Navigation
+#navigation
+  nav#nav.navbar.navbar-default.navbar-static-top
+	.container
+	  .navbar-header.page-scroll
+		button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+		  span.sr-only Explore
+		  span.icon-bar
+		  span.icon-bar
+		  span.icon-bar
+		// Brand
+		a.navbar-brand.page-scroll(align='center', href='#page-top')
+		// End Brand
+	  .collapse.navbar-collapse
+		ul.nav.navbar-nav.navbar-right
+		  li
+			a.page-scroll(href='#about') About
+		  li
+			a.page-scroll(href='#skills') Events
+		  li
+			a.page-scroll(href='#portfolio') Pictures
+		  li
+			a.page-scroll(href='#experience') Videos
+		  li
+			a.page-scroll(href='#reviews') Membership
+		  li
+			a.page-scroll(href='#blog') Blog
+		  li
+			a.page-scroll(href='#contact') Contact
+// END: Navigation
+// Introduction
+section#introduction
+  .container
+	.row
+	  .col-md-6.profile
+		a(href='https://www.facebook.com/events/1743964672541925/')
+		  img.img-responsive.center-block(src='assets/img/F.jpg', alt='')
+	  .col-md-6
+		.download-cv.wow.fadeInUp(height='200px', widht='align=', data-wow-duration='1s', data-wow-delay='.8s')
+		  .wow.fadeIn(data-wow-duration='1s', data-wow-delay='.4s')
+			h1.sub-headline
+			  | FEATURED
+			  span.dot .
+			  h3 East Coast Authentics Take Over Car Show
+			  b
+				| To benefit the East Windsor PD Union
+				br
+				| 									Follow the link below for more information!
+			  p
+		  br
+		  a(href='https://www.facebook.com/events/1743964672541925/') ECA Take Over!
+// END: Introduction
+// Skills
+section#skills
+  .container
+	.row
+	  .col-md-4.wow.fadeIn(data-wow-duration='1s', data-wow-delay='.4s')
+		h2.sub-headline
+		  | Enfield Mall Meets
+		  span.dot .
+		h3
+		  | SUNDAYS 5 PM - 9 PM 
+		  br
+		  hr
+		  | 						Every Sunday - Come on out!
+		  hr
+		  b Enfield Mall
+		  br
+		  | 						90 Elm Street, Enfield CT
+		  br
+	  .col-md-8
+		img.img-responsive.center-block(src='assets/img/F2.jpg', alt='')
+// END: Skills
+// Work Strategy
+section#strategy
+  .container
+	.row
+	  .col-md-12
+		h2.sub-headline
+		  | Discuss
+		  span.dot .
+	.row.sub-icon
+	  .col-md-4
+		.wow.fadeInDown(data-wow-duration='1s', data-wow-delay='.2s')
+		  h3
+			span.ti-light-bulb
+			| Ideas
+		  p
+			| Lorem ipsum dolor sit amet, mundi invidunt persequeris eu sed ridens facilisis eum.
+		.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.5s')
+		  h3
+			span.ti-pencil
+			| Designs
+		  p
+			| Lorem ipsum dolor sit amet, mundi invidunt persequeris eu sed ridens facilisis eum.
+	  .col-md-4
+		img.img-responsive.center-block(src='assets/img/2.png', alt='')
+	  .col-md-4
+		.wow.fadeInDown(data-wow-duration='1s', data-wow-delay='.2s')
+		  h3
+			span.ti-control-shuffle
+			| Advice
+		  p
+			| Lorem ipsum dolor sit amet, mundi invidunt persequeris eu sed ridens facilisis eum.
+		.wow.fadeInUp(data-wow-duration='1s', data-wow-delay='.5s')
+		  h3
+			span.ti-upload
+			| Follow Experts
+		  p
+			| Lorem ipsum dolor sit amet, mundi invidunt persequeris eu sed ridens facilisis eum.
+// END: Work strategy
+// Quotes
+section#quotes
+  .container
+	.quotes-overlay
+	.row
+	  .col-md-8.col-md-push-2.text-center
+		h2 Driven to be the best.
+// END: Quotes
+// Portfolio
+section#portfolio.portfolio-wrap
+  .container
+	.row
+	  .col-md-12
+		h2.sub-headline
+		  | Merchandise
+		  span.dot .
+	.row
+	  .col-xs-12.item-filter.bot-margin
+		ul.list-inline.text-center
+		  li.filter(data-filter='all') Stickers
+		  li.filter(data-filter='.print') Posters
+		  li.filter(data-filter='.brand') Clothing
+		  li.filter(data-filter='.logo') Automotive
+	  #portfolio-items.col-xs-12
+		.row
+		  .col-md-3.col-xs-12.mix.brand(data-myorder='1')
+			a(href='#', data-toggle='modal', data-target='#portfolio1')
+			  .img-wrap
+				img.img-responsive.center-block(src='assets/img/portfolio/portfolio01.jpg', alt='')
+				.img-overlay
+		  .col-md-3.col-xs-12.mix.logo(data-myorder='2')
+			a(href='#', data-toggle='modal', data-target='#portfolio1')
+			  .img-wrap
+				img.img-responsive.center-block(src='assets/img/portfolio/portfolio02.jpg', alt='')
+				.img-overlay
+		  .col-md-3.col-xs-12.mix.print(data-myorder='3')
+			a(href='#', data-toggle='modal', data-target='#portfolio1')
+			  .img-wrap
+				img.img-responsive.center-block(src='assets/img/portfolio/portfolio03.jpg', alt='')
+				.img-overlay
+		  .col-md-3.col-xs-12.mix.logo(data-myorder='4')
+			a(href='#', data-toggle='modal', data-target='#portfolio1')
+			  .img-wrap
+				img.img-responsive.center-block(src='assets/img/portfolio/portfolio04.jpg', alt='')
+				.img-overlay
+		  .col-md-3.col-xs-12.mix.brand(data-myorder='4')
+			a(href='#', data-toggle='modal', data-target='#portfolio1')
+			  .img-wrap
+				img.img-responsive.center-block(src='assets/img/portfolio/portfolio05.jpg', alt='')
+				.img-overlay
+		  .col-md-3.col-xs-12.mix.brand(data-myorder='4')
+			a(href='#', data-toggle='modal', data-target='#portfolio1')
+			  .img-wrap
+				img.img-responsive.center-block(src='assets/img/portfolio/portfolio06.jpg', alt='')
+				.img-overlay
+		  .col-md-3.col-xs-12.mix.print(data-myorder='4')
+			a(href='#', data-toggle='modal', data-target='#portfolio1')
+			  .img-wrap
+				img.img-responsive.center-block(src='assets/img/portfolio/portfolio07.jpg', alt='')
+				.img-overlay
+		  .col-md-3.col-xs-12.mix.print(data-myorder='4')
+			a(href='#', data-toggle='modal', data-target='#portfolio1')
+			  .img-wrap
+				img.img-responsive.center-block(src='assets/img/portfolio/portfolio08.jpg', alt='')
+				.img-overlay
+  // Portfolio1 fullscreen modal
+  #portfolio1.modal.fade.modal-fullscreen.force-fullscreen(tabindex='-1', role='dialog', aria-hidden='true')
+	.modal-dialog
+	  .modal-content
+		.modal-header
+		  button.close(type='button', data-dismiss='modal', aria-label='Close')
+			span(aria-hidden='true') ×
+		  .modal-title
+			.container
+			  .row
+				.col-md-12
+				  h2 Upcoming Items
+		.modal-body
+		  .container
+			.row.top-margin
+			  .col-md-4
+				img.img-responsive.center-block(src='assets/img/portfolio/portfolio01.jpg', alt='')
+			  .col-md-8
+				h3 New Items -
+				p Logo creation of XYZ
+				h3 Description -
+				p
+				  | Ipsum partem voluptatibus ex nam, prima virtute electram ius ei, vide error intellegat id cum. Duo ut accumsan molestie. Feugait referrentur vel in, te nostro convenire per, nullam nostrud placerat cum ne. Ne ancillae expetenda nec, dicam oportere te mel, audiam mnesarchum.
+				h3 Comments -
+				p
+				  | Ipsum partem voluptatibus ex nam, prima virtute electram ius ei, vide error intellegat id cum. Duo ut accumsan molestie. Feugait referrentur vel in, te nostro convenire per, nullam nostrud.
+		.modal-footer
+		  .container
+			.row
+			  .col-md-12
+				button.btn.custom-btn-2.pull-left(type='button', data-dismiss='modal') Close
+  // END: Portfolio1 fullscreen modal
+// END: Portfolio
+// Brands
+section#brands
+  .container
+	.row
+	  #brands-slider.col-md-12
+		.item
+		  img.img-responsive.center-block(src='assets/img/brands/01.png', alt='')
+		.item
+		  img.img-responsive.center-block(src='assets/img/brands/02.png', alt='')
+		.item
+		  img.img-responsive.center-block(src='assets/img/brands/03.png', alt='')
+		.item
+		  img.img-responsive.center-block(src='assets/img/brands/04.png', alt='')
+// END: Brands
+// Blog
+section#blog
+  .container
+	.row
+	  .col-md-12
+		h2.sub-headline
+		  | Latest News
+		  span.dot .
+	.row.top-pad
+	  .col-md-4
+		.blog-img-overlay
+		  a(href='#')
+			img.img-responsive.center-block(src='assets/img/blog/b_01.jpg', alt='')
+		.blog-info
+		  h3
+			span.ti-layout-media-overlay-alt-2.blog-icon
+			| Lorem ipsum sample blog
+		  .border-style
+			span.date 05 May, 2016
+		  p
+			| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae sem laoreet, mattis arcu at, lacinia praesent bibendum eros tempus.
+		.border-style
+		  a.more(href='#') Read more
+	  .col-md-4
+		.blog-img-overlay
+		  a(href='#')
+			img.img-responsive.center-block(src='assets/img/blog/b_02.jpg', alt='')
+		.blog-info
+		  h3
+			span.ti-layout-media-overlay-alt-2.blog-icon
+			| Lorem ipsum sample blog
+		  .border-style
+			span.date 15 March, 2016
+		  p
+			| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae sem laoreet, mattis arcu at, lacinia praesent bibendum eros tempus.
+		.border-style
+		  a.more(href='#') Read more
+	  .col-md-4
+		.blog-img-overlay
+		  a(href='#')
+			img.img-responsive.center-block(src='assets/img/blog/b_03.jpg', alt='')
+		.blog-info
+		  h3
+			span.ti-layout-media-overlay-alt-2.blog-icon
+			| Lorem ipsum sample blog
+		  .border-style
+			span.date 18 June , 2015
+		  p
+			| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae sem laoreet, mattis arcu at, lacinia praesent bibendum eros tempus.
+		.border-style
+		  a.more(href='#') Read more
+// END: Blog
+// Contact
+section#contact
+  .container
+	.row.sub-icon
+	  .col-md-10.col-md-offset-1.col-md-push-1
+		.row
+		  .col-sm-4.wow.fadeInDown(data-wow-duration='1.5s', data-wow-delay='.4s')
+			h3
+			  span.ti-location-pin
+			  | Address
+			p 218A EAST COAST, CT 6SA
+		  .col-sm-4.wow.fadeInDown(data-wow-duration='1.5s', data-wow-delay='.6s')
+			h3
+			  span.ti-email
+			  | Email
+			a(href='mailto:info@themehexa.com') info@eastcoastauthentics.com
+		  .col-sm-4.wow.fadeInDown(data-wow-duration='1.5s', data-wow-delay='.8s')
+			h3
+			  span.ti-mobile
+			  | Phone
+			a(href='tel:+441258889063') 1 125 888 0000
+	.row.top-pad.sub-icon
+	  .col-md-8.col-md-offset-2
+		form.form-horizontal(method='post', action='email.php')
+		  .form-group
+			.col-md-12
+			  // Email Confirmation Success
+			  p.confirmation.send-success
+				span.ti-check-box
+				| Email sent successfully.
+			  // Email Confirmation Error
+			  p.confirmation.send-error
+				span.ti-alert
+				| There is a problem sending email ...
+			  input.form-control(type='text', name='name', placeholder='Name', required='required')
+			  input.form-control(type='text', name='subject', placeholder='Subject', required='required')
+			  input.form-control(type='email', name='email', placeholder='Email', required='required')
+			  textarea.form-control(name='message', rows='4', placeholder='Message', required='required')
+			  button.btn.custom-btn-2.wow.fadeInUp(type='submit', data-wow-duration='1s', data-wow-delay='.5s') Submit
+// END: Contact
+// Footer
+footer
+  .container
+	.row
+	  .col-md-12.text-center
+		ul.list-inline.social-icon
+		  li
+			a(href='#')
+			  span.ti-facebook
+		  li
+			a(href='#')
+			  span.ti-google
+		  li
+			a(href='#')
+			  span.ti-twitter
+		  li
+			a(href='#')
+			  span.ti-dribbble
+		  li
+			a(href='#')
+			  span.ti-skype
+// END: Footer
+// Scroll Top
+.scroll-top
+  a.page-scroll(href='#page-top')
+	span.ti-angle-up
+// END: Scroll Top
+// javascript plugins
+script(src='assets/js/jquery-1.11.1.min.js')
+script(src='assets/js/bootstrap.min.js')
+script(src='assets/js/jquery.easing.1.3.min.js')
+script(src='assets/js/appear.js')
+script(src='assets/js/bootstrap-progressbar.min.js')
+script(src='assets/js/owl.carousel.min.js')
+script(src='assets/js/jquery.mixitup.min.js')
+script(src='assets/js/waypoints.min.js')
+script(src='assets/js/jquery.counterup.min.js')
+script(src='assets/js/animated-jquery.js')
+script(src='assets/js/wow.min.js')
+// custom js
+script(src='assets/js/custom.js')
