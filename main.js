@@ -22,10 +22,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use('/img',express.static(path.join(__dirname, 'public/assets/img')));
-app.use('/js',express.static(path.join(__dirname, 'public/assets/js')));
-app.use('/css',express.static(path.join(__dirname, 'public/assets/css')));
-
+app.use('/public/assets/css', express.static(__dirname + '/public/assets/css'));
+app.use('/public/assets/img', express.static(__dirname + '/public/assets/img'));
+app.use('/public/assets/js', express.static(__dirname + '/public/assets/js'));
 app.use('/', routes);
 app.use('/users', users);
 
@@ -60,5 +59,13 @@ app.use(function(err, req, res, next) {
   });
 });
 
+/* app.set('port', process.env.PORT || 8080);
+
+// Only works on 3000 regardless of what I set environment port to or how I set
+// [value] in app.set('port', [value]).
+// app.listen(3000);
+app.listen(app.get('port')); */
+
 
 module.exports = app;
+
