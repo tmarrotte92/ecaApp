@@ -59,12 +59,12 @@ app.use(function(err, req, res, next) {
   });
 });
 
-app.set('port', process.env.PORT || 8080);
+/* app.set('port', process.env.PORT || 8080);
 
 // Only works on 3000 regardless of what I set environment port to or how I set
 // [value] in app.set('port', [value]).
 // app.listen(3000);
-app.listen(app.get('port'));
+app.listen(app.get('port')); */
 
 
 module.exports = app;
